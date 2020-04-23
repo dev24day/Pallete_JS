@@ -4,10 +4,53 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="syles.css" />
+    <link rel="stylesheet" href="styles.css" />
     <title>PalleteJS</title>
   </head>
   <body>
+    <canvas class="canvas" id="jsCanvas"></canvas>
+    <div class="controls">
+      <div class="controls__range">
+        <input
+          type="range"
+          id="jsRange"
+          min="0.1"
+          max="5"
+          value="2.5"
+          step="0.1"
+        />
+      </div>
+      <div class="controls__btns">
+        <button class="controls__btn" id="jsMode">Fill</button>
+        <button class="controls__btn" id="jsSave">Save</button>
+      </div>
+      <div class="controls__colors">
+        <div class="controls__colorBundle" id="jsColors">
+          <div class="controls__color" style="background-color: #f6f578"></div>
+          <div class="controls__color" style="background-color: #f6d743"></div>
+          <div class="controls__color" style="background-color: #649d66"></div>
+          <div class="controls__color" style="background-color: #06623b"></div>
+        </div>
+        <div class="controls__colorBundle" id="jsColors">
+          <div class="controls__color" style="background-color: #ffffd2"></div>
+          <div class="controls__color" style="background-color: #fcbad3"></div>
+          <div class="controls__color" style="background-color: #aa96da"></div>
+          <div class="controls__color" style="background-color: #a8d8ea"></div>
+        </div>
+        <div class="controls__colorBundle" id="jsColors">
+          <div class="controls__color" style="background-color: #ffc93c"></div>
+          <div class="controls__color" style="background-color: #ff9a3c"></div>
+          <div class="controls__color" style="background-color: #ff6f3c"></div>
+          <div class="controls__color" style="background-color: #155263"></div>
+        </div>
+        <div class="controls__colorBundle" id="jsColors">
+          <div class="controls__color" style="background-color: #f0f5f9"></div>
+          <div class="controls__color" style="background-color: #c9d6df"></div>
+          <div class="controls__color" style="background-color: #52616b"></div>
+          <div class="controls__color" style="background-color: #1e2022"></div>
+        </div>
+      </div>
+    </div>
     <script src="app.js"></script>
   </body>
 </html>
